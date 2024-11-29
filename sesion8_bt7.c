@@ -6,7 +6,7 @@ int main(){
 	
 	for( int i=0;i<3;i++){
 		for(int j=0;j<3;j++){
-			if ( j + i == 2 ){
+			if ( i == j ){
 				printf ( "\t%d", number[i][j] );
 				sum += number[i][j];
 			} else{
@@ -15,6 +15,6 @@ int main(){
 		}
 		printf("\n");
 	}
-	printf("\n tong cac phan tu tren duong cheo phu la : %d ", sum);
+	printf("\n tong cac phan tu tren duong cheo chinh la : %d ", sum);
 	return 0;
     }
